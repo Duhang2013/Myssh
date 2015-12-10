@@ -1,0 +1,37 @@
+HTML {
+	PADDING-BOTTOM: 0px;
+	MARGIN: 0px;
+	PADDING-LEFT: 0px;
+	PADDING-RIGHT: 0px;
+	BACKGROUND: #137b35;
+	COLOR: #3f443f;
+	PADDING-TOP: 0px
+}
+
+BODY {
+	PADDING-BOTTOM: 0px;
+	MARGIN: 0px;
+	PADDING-LEFT: 0px;
+	PADDING-RIGHT: 0px;
+	BACKGROUND: #137b35;
+	COLOR: #3f443f;
+	PADDING-TOP: 0px;
+	BACKGROUND: url('../img/login/img_bg.jpg') no-repeat 0px 0px;
+	background-size: cover;
+	min-height: 494x;
+	position: relative;
+}
+
+HTML {
+	BACKGROUND: url('../img/login/img_bg.jpg') no-repeat 0px 0px;
+	background-size: cover;
+	min-height: 494x;
+	position: relative;
+}
+
+
+.myTitle {
+	float: center;
+	margin-top: 30px;
+	margin-bottom: 40px;
+}

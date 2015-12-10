@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+
+	<package name="usermanage" extends="struts-default">
+
+		<!-- 增加用户 -->
+		<action name="addUser" class="com.ssh.web.UsersAction" method="addUser">
+			<result name="success" type="redirect">/addUser_success.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		<!-- 删除用户 -->
+		<action name="delUser" class="com.ssh.web.UsersAction" method="delUser">
+			<result name="success" type="redirect">/delUser_success.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		<!-- 编辑用户 -->
+		<action name="editUser" class="com.ssh.web.UsersAction" method="editUser">
+			<result name="success">/user_edit.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		<!-- 用户列表 -->
+		<action name="listUser" class="com.ssh.web.UsersAction" method="listUser">
+			<result name="success">/user_list.jsp</result>
+		</action>
+		<!-- 用户登陆 -->
+		<action name="login" class="com.ssh.web.UsersAction" method="login">
+			<result name="success">/welcome.jsp</result>
+			<result name="input">/login.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		<!-- 增加学生 -->
+		<action name="addStudent" class="com.ssh.web.StudentsAction" method="addStudent">
+			<result name="success" type="redirect">/addUser_success.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		<!-- 学生资料编辑 -->
+		<action name="editStudent" class="com.ssh.web.StudentsAction" method="editStudent">
+			<result name="success" type="redirect">/addUser_success.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		<!-- 学生列表显示 -->
+		<action name="listStudent" class="com.ssh.web.StudentsAction" method="listStudent">
+			<result name="success">/student_list.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+			
+	</package>
+
+
+	<!--返回json的action -->
+	<package name="json" namespace="" extends="json-default">
+		<!-- 新增用户登陆 -->
+		<action name="newLogin" class="com.ssh.web.UsersAction" method="newLogin">
+			<result type="json"></result>
+		</action>
+		<!-- 获得所有用户 -->
+		<action name="getAllUser" class="com.ssh.web.UsersAction" method="getAllUser">
+			<result type="json"></result>
+		</action>
+		<!-- 添加用户 -->
+		<action name="addUserJson" class="com.ssh.web.UsersAction" method="addUserJson">
+			<result type="json"></result>
+		</action>
+		<!-- 删除用户 -->
+		<action name="delUserJson" class="com.ssh.web.UsersAction" method="delUserJson">
+			<result type="json"></result>
+		</action>
+		<!-- 编辑用户 -->
+		<action name="editUserJson" class="com.ssh.web.UsersAction" method="editUserJson">
+			<result type="json"></result>
+		</action>
+		
+		<!-- 新增 用户注册 -->
+		<action name="register" class="com.ssh.web.UsersAction" method="register">
+			<result type="json"></result>
+		</action>
+		<!-- 用户修改秘密 -->
+		<action name="modifyPassword" class="com.ssh.web.UsersAction" method="modPassword">
+			<result type="json"></result>
+		</action>
+		
+		
+		<!-- 获得所有学生用户 -->
+		<action name="getAllStudent" class="com.ssh.web.StudentsAction" method="getAllStudent">
+			<result type="json"></result>
+		</action>
+		<!-- 添加学生 -->
+		<action name="addStudentJson" class="com.ssh.web.StudentsAction" method="addStudentJson">
+			<result type="json"></result>
+		</action>
+		<!-- 删除学生 -->
+		<action name="delStudentJson" class="com.ssh.web.StudentsAction" method="delStudentJson">
+			<result type="json"></result>
+		</action>
+		<!-- 编辑学生 -->
+		<action name="editStudentJson" class="com.ssh.web.StudentsAction" method="editStudentJson">
+			<result type="json"></result>
+		</action>
+		
+	</package>
+
+</struts>

@@ -1,0 +1,133 @@
+@CHARSET "UTF-8";
+
+/* 默认的： 页面颜色，字体格式、大小、颜色 */
+body{
+    font: 14px/24px "Microsoft YaHei","Arial",sans-serif;
+    background:#E9EAEB;
+    color: #222222;
+}
+
+button,input,select,textarea {
+    font:12px \5b8b\4f53,arial,sans-serif;
+}
+input,select,textarea {
+    font-size:100%;
+}
+/* 鍘绘帀 table cell 鐨勮竟璺濆苟璁╁叾杈归噸鍚� */
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+/* ie bug锛歵h 涓嶇户鎵� text-align */
+th {
+    text-align:inherit;
+}
+/* 鍘婚櫎榛樿杈规 */
+fieldset,img {
+    border:none;
+}
+/* ie6 7 8(q) bug 鏄剧ず涓鸿鍐呰〃鐜� */
+iframe {
+    display:block;
+}
+/* 鍘绘帀 firefox 涓嬫鍏冪礌鐨勮竟妗� */
+abbr,acronym {
+    border:none;
+    font-variant:normal;
+}
+/* 涓€鑷寸殑 del 鏍峰紡 */
+del {
+    text-decoration:line-through;
+}
+address,caption,cite,code,dfn,em,th,var {
+    font-style:normal;
+    font-weight:500;
+}
+/* 鍘绘帀鍒楄〃鍓嶇殑鏍囪瘑锛宭i 浼氱户鎵� */
+ol,ul {
+    list-style:none;
+}
+/* 瀵归綈鏄帓鐗堟渶閲嶈鐨勫洜绱狅紝鍒浠€涔堥兘灞呬腑 */
+caption,th {
+    text-align:left;
+}
+/* 鏉ヨ嚜yahoo锛岃鏍囬閮借嚜瀹氫箟锛岄€傚簲澶氫釜绯荤粺搴旂敤 */
+h1,h2,h3,h4,h5,h6 {
+    font-size:100%;
+    font-weight:500;
+}
+q:before,q:after {
+    content:'';
+}
+/* 缁熶竴涓婃爣鍜屼笅鏍� */
+sub,sup {
+    font-size:75%;
+    line-height:0;
+    position:relative;
+    vertical-align:baseline;
+}
+sup {
+    top:-0.5em;
+}
+sub {
+    bottom:-0.25em;
+}
+/* 璁╅摼鎺ュ湪 hover 鐘舵€佷笅鏄剧ず涓嬪垝绾� */
+a:hover {
+    text-decoration:underline;
+}
+/* 榛樿涓嶆樉绀轰笅鍒掔嚎锛屼繚鎸侀〉闈㈢畝娲� */
+ins,a {
+    text-decoration:none;
+}
+a {
+	color: #666;
+}
+/* 鍘婚櫎 ie6 & ie7 鐒︾偣鐐圭姸绾� */
+a:focus,*:focus {
+    outline:none;
+}
+/* 娓呴櫎娴姩 */
+.clearfix:before,.clearfix:after {
+    content:"";
+    display:table;
+}
+.clearfix:after {
+    clear:both;
+    overflow:hidden;
+}
+.clearfix {
+    zoom:1; /* for ie6 & ie7 */
+}
+.clear {
+    clear:both;
+    display:block;
+    font-size:0;
+    height:0;
+    line-height:0;
+    overflow:hidden;
+}
+/* 璁剧疆鏄剧ず鍜岄殣钘忥紝閫氬父鐢ㄦ潵涓� js 閰嶅悎 */
+.hide {
+    display:none;
+}
+.block {
+    display:block;
+}
+/* 璁剧疆娴姩锛屽噺灏戞诞鍔ㄥ甫鏉ョ殑 bug */
+.fl,.fr {
+    display:inline;
+}
+.fl {
+    float:left;
+}
+.fr {
+    float:right;
+}
+.oh {
+	overflow: hidden;
+}
+/* 璁剧疆瀵归綈 */
+.tc {text-align: center;}
+.tr {text-align: right;}
+.tl {text-align: left;}
